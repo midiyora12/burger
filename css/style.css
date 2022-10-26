@@ -1,0 +1,272 @@
+
+
+@import 'fonts.css';
+:root{
+    --r-r: 'Raleway-Regular';
+    --r-bl: 'Raleway-Black';
+    --r-l: 'Raleway-Light';
+    --r-bo: 'Raleway-Bold';
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: var(--r-r);
+}
+
+header{
+    background: url(../img/header-fon.png) no-repeat top / cover;
+    height: 100vh;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul{
+    display: flex;
+    align-items: center;
+}
+
+header .nav-link{
+    color: #69cf17;
+    font-size: 20px;
+    padding: 41px 11px 29px 14px;
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+}
+
+header .nav-link span{
+    width: 24px;
+    height: 24px;
+    background: #fff;
+    color: #69cf17;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}
+
+header .nav-link:hover{
+    background: #509d13;
+    color: #fff;
+}
+
+header h1{
+    font-size: 72px;
+    color: #69cf17;
+    margin-top: 167px;
+    font-family: var(--r-bl);
+}
+
+header .header-text-1{
+    font-family: var(--r-r);
+    font-size: 36px;
+    color: #69cf17;
+    margin-top: 20px;
+    margin-bottom: 35px;
+}
+
+header .header-text-2{
+    margin-bottom: 77px;
+    font-family: var(--r-r);
+    font-size: 18px;
+    color: #cd3838;
+}
+
+header button{
+    padding: 31px 91px 29px 95px;
+    border: none;
+    background: #509d13;
+    opacity: 0.75;
+    color: #fff;
+    font-size: 60px;
+}
+
+main{
+    background: #000;
+    padding-top: 50px;
+    padding-bottom: 105px;
+}
+
+main ul{
+    display: flex;
+    align-items: center;
+}
+
+main ul .main-list-link{
+    font-family: var(--r-bo);
+    font-size: 20px;
+    color: #7a7a7a;
+    display: block;
+    padding: 0 25px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+main ul .main-list-link:hover{
+    color: #69cf17;
+}
+
+.main-item{
+    margin-top: 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.main-item .main-img{
+    position: relative;
+    width: 100%;
+}
+
+.main-item .main-img img{
+    width: 100%;
+}
+
+.main-item .main-img .main-link{
+    position: absolute;
+    padding: 21px 57px 20px 58px;
+    background: #69cf17;
+    color: #fff;
+    font-family: var(--r-r);
+    bottom: 0;
+    left: 0;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.main-item .main-img .main-add{
+    width: 100%;
+    height: 100%;
+    background: #69cf17;
+    color: #fff;
+    font-family: var(--r-bo);
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.main-item .main-img:hover .main-add{
+    opacity: 0.8;
+}
+
+.main-item .main-img:hover .main-link{
+    opacity: 0;
+}
+
+.main-item .main-item-title{
+    font-family: var(--r-bo);
+    font-size: 24px;
+    color: #69cf17;
+    margin-top: 40px;
+    margin-bottom: 20;
+}
+
+.main-item .main-item-desc{
+    font-family: var(--r-r);
+    font-size: 16px;
+    color: #dedede;
+}
+
+.section-text{
+    background: url(../img/section-fon.png) no-repeat center center / cover;
+}
+
+.section-text h1{
+    margin-top: 50px;
+    font-family: var(--r-bo);
+    font-size: 36px;
+    color: #69cf17;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.section-text h1::after{
+    content: '';
+    display: block;
+    width: 200px;
+    height: 2px;
+    background: #69cf17;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+.section-text p{
+    font-family: var(--r-r);
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 100px;
+}
+
+.map h4{
+    margin-top: 50px;
+    font-family: var(--r-bo);
+    font-size: 36px;
+    color: #69cf17;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.map iframe{
+    width: 100%;
+}
+
+footer{
+    background: rgb(8,5,3);
+    background: linear-gradient(180deg, rgba(8,5,3,1) 0%, rgba(23,36,6,1) 100%);
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+
+footer .row div{
+    display: flex;
+}
+
+footer h5{
+    font-size: 24px;
+    color: #69cf17;
+}
+
+footer ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 41px;
+    margin-bottom: 49px;
+    width: 100%;
+}
+
+footer ul a{
+    font-size: 30px;
+    padding: 5px;
+    display: block;
+    color: #fff;
+    transition: 0.5s;
+}
+
+footer ul a:hover{
+    color: #69cf17;
+}
+
+footer h6{
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+}

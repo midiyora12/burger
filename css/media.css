@@ -1,0 +1,45 @@
+@media (max-width:991px){
+    header button{
+        font-size: 40px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+}
+
+@media (max-width:767px){
+    header .nav-link{
+        font-size: 13px;
+    }
+    
+    main ul .main-list-link{
+        padding: 0 10px;
+        font-size: 13px;
+    }
+    
+    header h1{
+        margin-top: 120px;
+        font-size: 50px;
+    }
+}
+
+@media (max-width:532px){
+    header nav ul{
+        display: none;
+    }
+    header .logo{
+        margin-top: 11px;
+    }
+    main ul{
+        display: none;
+    }
+}
+
+@media (max-width:340px){
+    header button{
+        padding: 15px 50px;
+        font-size: 30px;
+    }
+    header .header-text-2{
+        font-size: 16px;
+    }
+}
